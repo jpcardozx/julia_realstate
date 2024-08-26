@@ -42,6 +42,10 @@ body {
     max-width: 75%;
     margin: 0 auto;
     padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 24px;
 }
 
 /* Header com Glassmorphism */
@@ -282,6 +286,9 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
 }
 
 .property-item {
@@ -290,6 +297,8 @@ body {
     box-shadow: var(--shadow-soft);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 .property-item:hover {
@@ -340,6 +349,7 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     transition: var(--transition);
+    margin: 0 auto;
 }
 
 .property-details .cta-btn:hover {
@@ -401,15 +411,17 @@ body {
     font-family: var(--font-heading);
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    text-align: center;
     color: var(--color-primary);
+    text-align: center;
 }
 
 .testimonial-carousel {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .testimonial-item {
@@ -419,6 +431,13 @@ body {
     box-shadow: var(--shadow-soft);
     color: var(--color-text);
     font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.client-icon {
+    border-radius: 50px;
 }
 
 /* Contact Section */
